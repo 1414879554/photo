@@ -1,0 +1,911 @@
+body{
+    min-width: 1200px;
+}
+.bodyMask {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 50;
+    display: none;
+    background: rgba(0, 0, 0, .3);
+}
+#header.mini {
+    padding-top: 0px;
+    background-color: rgba(51, 51, 51, 0.8);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.04);
+}
+#header.mini {
+    background-color: rgba(0, 0, 0, .51);
+    padding-top: 10px;
+}
+#header {
+    padding-top: 0px;
+    background-color: transparent;
+}
+#header {
+    width: 100%;
+    height: auto;
+    position: fixed;
+    padding-top: 20px;
+    font-size: 14px;
+    transition: all ease .3s;
+    z-index: 99;
+    transition-property: padding, background;
+}
+
+#header .content {
+    padding-left: 0px;
+    padding-right: 0px;
+}
+#header .content {
+    padding: 0 40px;
+}
+#header.mini #logo {
+    padding: 10px 20px 10px 20px;
+}
+#header #logo {
+    padding: 20px 0 20px 40px;
+    transition: all 0.3s ease-out 0s;
+    margin-right: 20px;
+}
+#header #logo {
+    width: auto;
+    height: 40px;
+    display: block;
+    float: left;
+    margin-right: 50px;
+}
+
+#header.mini ul li.navitem {
+    padding: 10px 0.5px;
+}
+#header.mini ul li.navitem {
+    padding-bottom: 0;
+}
+#header ul li.navitem {
+    padding: 20px 0.5px;
+    height: auto;
+}
+#header ul li a{
+    color:#CCCCCC;
+}
+#header ul li.navitem {
+    width: auto;
+    height: 50px;
+    line-height: 35px;
+    float: left;
+    position: relative;
+    margin-right: 60px;
+}
+#header ul li a:hover{
+    color: #ff6600;
+}
+
+#header ul li.navitem ul.subnav {
+    height: 0;
+    position: absolute;
+    width: 250px;
+    background: #2c323b;
+    transition-property: height;
+    transition: 0.5s;
+    overflow: hidden;
+}
+#header ul li.navitem ul.subnav li{
+    color: black;
+    border-bottom:1px solid #7B7B7B ;
+    padding: 10px 40px;
+    overflow: hidden;
+}
+#header ul li.navitem.gy:hover .subnav {
+    height: 169px;
+}
+#header.mini ul#nav {
+    padding: 0 0 0 20px;
+}
+#header ul#nav {
+    float: right;
+    padding: 0 0;
+    transition: all 0.3s ease-out 0s;
+}
+#header ul#nav{
+    color: #CCCCCC;
+}
+.clear {
+    clear: both;
+}
+#headSHBtn {
+    display: none;
+    width: 40px;
+    height: 40px;
+    background: #000;
+    line-height: 40px;
+    text-align: center;
+    color: #fff;
+    position: absolute;
+    top: 0;
+    right: -40px;
+}
+.fa {
+    display: inline-block;
+    font: normal normal normal 14px/1 FontAwesome;
+    font-size: inherit;
+    text-rendering: auto;
+    transform: translate(0, 0);
+}
+.fa-angle-down{
+    margin-left: 8px;
+}
+/*======header  e=========*/
+.banner{
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+.banner img{
+    width: 100%;
+    height: 100%;
+    transition: all 3s;
+    display: none;
+}
+.banner img.now{
+    display: block;
+}
+.point{
+    position: absolute;
+    bottom: 40px;
+    left: 45%;
+    z-index: 999;
+}
+.point a.now{
+    background: #ff6600;
+}
+.point a{
+    text-decoration: none;
+    float: left;
+    width: 15px;
+    height:15px;
+    background: white;
+    color: white;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    margin-right: 15px;
+}
+/*===========================*/
+.wrap{
+    background: url(../img/beijing.jpg)no-repeat center;
+    width: 100%;
+    background-size: cover;
+    height: 1340px;
+}
+.wrap-inner{
+    height: auto;
+    width: 96%;
+    margin: 0 auto;
+}
+.wrap .top{
+    padding-top: 80px;
+    width: 100%;
+    display: inline-block;
+}
+.wrap .top p.title{
+    text-align: center;
+    color: #fff;
+    font-family: "HELVETICANEUELTPRO-THEX", "微软雅黑";
+    font-size: 25px;
+
+}
+.wrap .top p.subtitle{
+    text-align: center;
+    width: 47%;
+    margin: 0 auto;
+    color: #828282;
+    font-size: 15px;
+    line-height: 20px;
+    animation:rotateIn 2s ease 2;
+
+}
+.wrap .top p.subtitle::after{
+    display: block;
+    content: "";
+    width: 25px;
+    height: 5px;
+    background-color: #fe7600;
+    left: 0;
+    position: relative;
+    top: 20px;
+    margin: 0 auto;
+}
+.wrap .topx{
+    padding-top: 80px;
+    height: 30px;
+    padding-bottom: 60px;
+    text-align: center;
+}
+.wrap .topx a{
+    padding: 5px 15px;
+    margin-right: 10px;
+    transition: all 0.3s ease-out 0s;
+    color: #999;
+    border: 1px solid transparent;
+    position: relative;
+    z-index: 2;
+    font-size: 14px;
+
+}
+.topx a.now{
+    background: #fe7600;
+    color: white;
+}
+.wrap .topx a::before{
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 50px;
+    height: 100%;
+    z-index: -1;
+    content: "";
+    color: #eadfdf;
+    transition: all 0.2s cubic-bezier(0, 0, 0.24, 0.64);
+}
+.wrap .topx a::after{
+    content: '';
+    position: absolute;
+    width: 2px;
+    height: 2px;
+    margin-left: 50px;
+    margin-top: -12px;
+    background: rgba(255, 255, 255, 0.2);
+}
+.topx a:hover {
+    color: #fff;
+    border: 1px solid transparent;
+    background-color: #fe7600;
+  }
+
+.projectlist{
+    max-width: 1920px;
+    margin: 0 auto;
+    width: 100%;
+    padding-bottom: 100px;
+}
+.projectSubList, .projectSubList .content_list {
+    width: 100%;
+}
+.projectSubList {
+    margin-bottom: 20px;
+}
+.wapper{
+    width: 100%;
+    height: 1150px;
+    margin: 0;
+    overflow: hidden;
+}
+.wapper ul{
+    position: relative;
+    height: 1150px;
+    width: 100%;
+    overflow: hidden;
+    display: none;
+    animation:bounceInDown 2s ease-in-out 1 ;
+}
+.wapper ul.now{
+    display: block;
+}
+.wapper ul li {
+    position: absolute;
+    float: left;
+    padding: 10px 10px;
+    margin-left: 5px;
+    overflow: hidden;
+    cursor: pointer;
+}
+.wapper ul .li1{
+    top: 0;
+    left: 0;
+}
+.wapper ul .li2{
+    top: 0;
+    left: 20%;
+}
+.wapper ul .li3{
+    top: 0;
+    left: 40%;
+}
+.wapper ul .li4{
+    top: 0;
+    left: 60%;
+}
+.wapper ul .li5{
+    top: 0;
+    left: 80%;
+}
+.wapper ul .li6{
+    top: 24.5%;
+    left: 0%;
+}
+.wapper ul .li7{
+    top: 28%;
+    left: 20%;
+}
+.wapper ul .li8{
+    top: 24.5%;
+    left: 40%;
+}
+.wapper ul .li9{
+    top: 24.5%;
+    left: 60%;
+}
+.wapper ul .li10{
+    top: 38%;
+    left: 80%;
+}
+.wapper ul .li11{
+    top: 49%;
+    left: 60%;
+}
+.zhe{
+    position: absolute;
+    width: 285px;
+    height: 5px;
+    background: #fe7600;
+    bottom: -10px;
+    transition: all 0.3s ease 0s;
+}
+.wapper ul .tu img{
+    display: block;
+    width: 100%;
+}
+.wapper ul .tu{
+    position: relative;
+    width: 285px;
+    overflow: hidden;
+}
+.xzi{
+    padding: 15px 0;
+    width: 285px;
+    text-align: center;
+    color: #7B7B7B;
+}
+.xzi .ph{
+    font-size: 16px;
+    transition: all ease-out .3s;
+    overflow: hidden;
+    margin-top: 5px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+.xzi .pha{
+    color: #BABABA;
+    font-size: 12px;
+    margin-top: 0;
+    text-align: center;
+    opacity: 0;
+    transform: rotateX(90deg);
+    -webkit-transform: rotateX(90deg);
+    transition: all 0.3s ease 0s;
+}
+.wapper ul .zheg:hover .zhe{
+    bottom: 0;
+}
+.wapper ul li:hover img {
+    overflow: hidden;
+    transform: scale(1.1);
+    transition: all 0.3s ease 0s;
+}
+.wapper ul li:hover .xzi .ph{
+    margin-top: 0;
+    color:#fe7600 ;
+    -webkit-transform: rotateX(0deg);
+
+}
+.wapper ul li:hover .xzi .pha{
+    color: #CCCCCC;
+    opacity: 1;
+    -webkit-transform: rotateX(0deg);
+    transition: all 0.3s ease 0s
+}
+.more{
+    position: relative;
+    left: 40%;
+    top: 10%;
+    width: 20%;
+    height: 50px;
+    border: 1px solid #474747;
+    margin-top: -180px;
+}
+.more:hover .morez .bs{
+    left: 0;
+    background:#fe7600 ;
+}
+.more:hover{
+    border: 1px solid #fe7600;
+}
+
+
+/*===============shipin=================*/
+.camera{
+    position: relative;
+    width: 100%;
+    height: 360px;
+    background: #303030;
+    overflow: hidden;
+}
+.camear_inner{
+    width: 100%;
+    height: 100%;
+    margin: auto;
+}
+.camera ul{
+    width: 100%;
+    height: 285px;
+}
+.camera ul li{
+    width: 500px;
+    height: 250px;
+    margin: 35px 12px;
+    float: left;
+    text-align: center;
+    overflow: hidden;
+    transform: translateX(0);
+    transition: all 0.3s ease 0s;
+}
+.camera ul li .xj{
+    margin: auto;
+    width: 140px;
+    height: 70px;
+    overflow: hidden;
+}
+.camera ul li .xj img{
+    display: block;
+    width: 100%;
+}
+.camera ul li .xjxz{
+    width: 75%;
+    margin: auto;
+}
+.camera .xjxz p{
+    color:#aaaaaa;
+    font-size: 13px;
+    line-height: 20px;
+    animation:bounceIn 3s ease-in-out infinite ;
+}
+.camera .xjxz .fd{
+    color:whitesmoke;
+    font-size:15px;
+}
+.camera ul li:hover{
+    background: #333333;
+    transform: scale(1.1);
+}
+.camera ul li:hover .xj{
+    transform: scale(1.1);
+}
+.camera ul li:hover .fd{
+    color: #fe7600;
+}
+.zj{
+    position: absolute;
+    float: left;
+    width: 24px;
+    height: 40px;
+    left: 10px;
+    top: 40%;
+    display: inline-block;
+    cursor: pointer;
+ }
+.yj{
+    position: absolute;
+    width: 24px;
+    height: 40px;
+    right: 10px;
+    top: 40%;
+    float: right;
+    cursor: pointer;
+}
+.camera .zj:hover+ul{
+    background: bisque;
+    transform: translateX(500px);
+}
+.yj:hover.camera ul li{
+    transform: translateX(0);
+}
+.more4{
+    position: relative;
+    left: 40%;
+    top: 6%;
+    width: 20%;
+    height: 50px;
+}
+.morez{
+    position: absolute;
+    width: 100%;
+    height: 50px;
+    overflow: hidden;
+}
+.morez .bsz{
+    position: absolute;
+    width: 100%;
+    height: 50px;
+    color: white;
+    left: 0%;
+    top: 0%;
+    text-align: center;
+    line-height: 50px;
+    font-size: 14px;
+
+    vertical-align: middle;
+    transition: all 0.3s ease 0s;
+    z-index: 9999;
+}
+.morez .bs{
+    position: absolute;
+    width: 100%;
+    height: 50px;
+    color: white;
+    left: -100%;
+    top: 0%;
+    transform: translateX(0);
+    transition: all 0.3s ease 0s;
+    z-index: 9998;
+}
+.more4:hover .morez .bs{
+    left: 0;
+    background:#fe7600 ;
+}
+.more4:hover .morez{
+    border: 1px solid #474747;
+}
+/*========================camera e=================*/
+.xinxi{
+    position: relative;
+    width: 100%;
+    height: 258px;
+    /*height: 496px;*/
+    background: #474747;
+    overflow: hidden;
+}
+.xinxi ul{
+    width: 100%;
+    overflow:hidden;
+}
+.xinxi ul li{
+    width: 1589px;
+    float: left;
+    list-style: none;
+    position: relative;
+    visibility: visible;
+    animation-delay: 0s;
+    overflow: hidden;
+}
+.xinxi .dong ul li{
+    display: none;
+}
+.xinxi .dong .now{
+    display: block;
+}
+.xinxi .left{
+    float: left;
+    margin: 40px 0% 0 21%;
+    border-radius: 0px;
+    width: 180px;
+    height: auto;
+}
+.xinxi .right{
+    float: left;
+    width: 40%;
+    margin-top: 60px;
+    transition: all 0.2s ease 0s;
+    margin-left: 10%;
+}
+.xinxi .right .bt{
+    color: #fff;
+    font-size: 24px;
+}
+.xinxi .right .subtitle {
+    color: #6b6b6b;
+}
+.xinxi .right .description {
+    width: 100%;
+    font-size: 13px;
+    color: #bebebe;
+    height: auto;
+    line-height: 24px;
+    margin-left: 0;
+    margin-top: 20px;
+}
+.xinxi img{
+    animation:wobble 5s ease infinite ;
+}
+.xinxi .right:hover {
+    margin-left: 15%;
+    transition:1s;
+}
+.xinxi .right:hover .bt{
+    color: #fe7600;
+}
+.dian ul{
+    position: absolute;
+    left: 50%;
+    bottom: 8%;
+}
+.dong li.now{
+    display: none;
+}
+.dian ul li{
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    border: 1px solid #a3a3a3;
+    margin-left: 10px;
+}
+.dian ul li.now{
+    background: #ff6600;
+    border: 1px solid transparent;
+}
+/*========================xinxi===============*/
+.spal{
+    position: relative;
+    width: 100%;
+    height: 580px;
+    background: #303030;
+    overflow: hidden;
+}
+.spal_inner{
+    width: 90%;
+    height: 550px;
+    margin: auto;
+}
+.spal .tops{
+    margin-top: 50px;
+    color: #d2d2d2;
+    font-size: 25px;
+}
+.spal .topx {
+    font-size: 13px;
+    color: #bdbdbd;
+    margin-top: 4px;
+}
+.spal_inner .tuw{
+    margin-top: 30px;
+}
+.spal_inner .tuw{
+    width: 100%;
+}
+.spal_inner .tuw ul{
+    position: relative;
+}
+.spal_inner .tuw ul li{
+    float: left;
+}
+
+.spal_inner .tuw .item_info {
+    position: inherit;
+    top: auto;
+    left: auto;
+    padding-top: 15px;
+    padding-left: 0;
+    transition: all 0.6s ease 0s;
+}
+.image{
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+}
+.image img{
+    width: 340px;
+    height: 220px;
+    padding-left:13px;
+}
+.icon-bofang:before {
+    position: absolute;
+    content: "\e626";
+    font-size: 55px;
+    color: white;
+    opacity: 0;
+    top: -10px;
+    left: 40%;
+    transition: all 0.6s ease 0s;
+}
+.item_info{
+    margin-left: 10px;
+}
+.tuw .item_info .title {
+    color: #7d7d7d;
+    font-size: 15px;
+}
+.tuw .item_info .subtitle {
+    color: #7d7d7d;
+    margin-top: 10px;
+    font-size: 13px;
+}
+.spal_inner .tuw li:hover .icon-bofang:before{
+    top: 26%;
+    opacity: 1;
+}
+.spal_inner .tuw li:hover .item_info{
+   margin-left: 30px;
+}
+.spal_inner .tuw li:hover .title{
+    color: #fe7600;
+}
+.more3{
+    position: relative;
+    left: 40%;
+    width: 20%;
+    height: 50px;
+    border: 1px solid #474747;
+    margin-top: 75px;
+}
+.more3:hover .morez .bs{
+    left: 0;
+    background:#fe7600 ;
+}
+/*=========================spal e==============*/
+.watsi{
+    position: relative;
+    width: 100%;
+    height: 210px;
+    background: black;
+    overflow: hidden;
+    border-bottom: 1px solid #303030;
+}
+.watsi_inner{
+    width: 90%;
+    margin: auto;
+}
+.watsi_inner ul{
+    margin-top: 50px;
+}
+.watsi_inner ul li{
+    float: left;
+    width: 160px;
+    height: 80px;
+    text-align: center;
+    margin-left: 10px;
+}
+.watsi img{
+    animation:headShake 3s ease infinite ;
+
+}
+/*========================watsi e=============*/
+.wrap2{
+    background: url(../img/beijing2.jpg)no-repeat center;
+    width: 100%;
+    background-size: cover;
+    height: 470px;
+    overflow: hidden;
+}
+.wrap-inner{
+    height: auto;
+    width: 96%;
+    margin: 0 auto;
+}
+/*=====================footer=======================*/
+footer{
+    width: 100%;
+    overflow: hidden;
+}
+.footer_inner{
+    margin: auto;
+    width: 88%;
+}
+.footer_inner .fw {
+    width: 100%;
+    margin-top: 40px;
+}
+
+#mcontact .content #contactinfo {
+    width: 45%;
+}
+#contactinfo h3 {
+    float: left;
+    width: 50%;
+    color: #8e8e8e;
+    font-size: 18px;
+    line-height: 40px;
+    margin-bottom: 25px;
+    font-weight: 100;
+    animation:flipInX 2s ease infinite ;
+}
+#contactinfo{
+    float: left;
+    width: 50%;
+    height: 350px;
+    animation:bounceInDown 2s ease 1 ;
+}
+#contactinfo p {
+    float: inherit;
+    color: #989898;
+    width: 50%;
+    padding-right: 40px;
+    height: 40px;
+    font-size: 14px;
+    line-height: 40px;
+    cursor: pointer;
+}
+.ellipsis {
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    display: block;
+    overflow: hidden;
+}
+#mcontact .content #contactform {
+    animation-name: fadeInRight;
+    animation-delay: 0.2s;
+    width: 50%;
+}
+#contactform p {
+    border-bottom: 1px solid rgba(221, 221, 221, 0.16);
+    padding-top: 5px;
+}
+#contactform p .inputtxt {
+    width: 480px;
+    height: 24px;
+    line-height: 24px;
+    border: none;
+    background: none;
+    color: #fff;
+    transition: all 0.3s ease-out 0s;
+    padding: 10px 20px;
+    margin-bottom: 10px;
+
+}
+#contactinfo div a {
+    width: 36px;
+    height: 36px;
+    border-radius: 26px;
+    background: rgba(0, 0, 0, .3);
+    margin-right: 20px;
+    text-align: center;
+    line-height: 36px;
+    color: white;
+    cursor: pointer;
+}
+#contactinfo div a:hover{
+    background:#fe7600 ;
+}
+.fa-weibo:before{
+    content: "\f18a";
+    display: inline-block;
+}
+.fa-wechat:before, .fa-weixin:before {
+    content: "\f1d7";
+    display: inline-block;
+}
+.fa-qq:before {
+    content: "\f1d6";
+    display: inline-block;
+}
+#contactform p textarea.inputtxt {
+    height: 80px;
+}
+input, textarea {
+    width: 480px;
+    height: 45px;
+    outline: 0;
+    font-size: 16px;
+    color: white;
+    background-color: #444444;
+    border-bottom: none;
+}
+input:hover{
+    background:#fe7600;
+}
+.foot{
+    background: #444444;
+    width: 100%;
+    height: 50px;
+    position: relative;
+    z-index: 2;
+    line-height: 50px;
+    border-top: 1px solid #303030;
+}
+.foot p{
+    padding-left: 20px;
+    color: #8e8e8e;
+}
+
